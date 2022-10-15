@@ -1,0 +1,59 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+  }
+  #sliders {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 180px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+  }
+  #wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #video {
+    position: relative;
+    z-index: 10;
+  }
+  
+  h1 {
+    font-family: "flex";
+    user-select: none;
+    width: 100%;
+    text-align: center;
+    font-weight: 10;
+    font-style: var(--custom-fontStyle);
+    font-size: var(--custom-fontSize);
+    font-variation-settings: "WMX2" var(--custom-WMX2), "TRMG" var(--custom-TRMG),
+      "BLDA" var(--custom-BLDA), "TRMD" var(--custom-TRMD),
+      "TRMC" var(--custom-TRMC), "SKLD" var(--custom-SKLD),
+      "TRML" var(--custom-TRML), "SKLA" var(--custom-SKLA),
+      "TRMF" var(--custom-TRMF), "TRMK" var(--custom-TRMK),
+      "BLDB" var(--custom-BLDB), "TRMB" var(--custom-TRMB),
+      "TRMA" var(--custom-TRMA), "SKLB" var(--custom-SKLB),
+      "TRME" var(--custom-TRME);
+  }
+  
+  canvas, .webgl {
+    box-sizing: border-box;
+  }
+  #video canvas {
+    position: absolute;
+    left: 0px;
+  }
+  
