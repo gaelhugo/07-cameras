@@ -1,7 +1,7 @@
 import Utils from "./Utils.js";
-import mymodel from "../model/model.json";
-import mymetadata from "../model/model_meta.json";
-import myweights from "../model/model.weights.bin";
+// import mymodel from "../model/model.json";
+// import mymetadata from "../model/model_meta.json";
+// import myweights from "../model/model.weights.bin";
 
 export default class NeuralNet {
   constructor(inputs, outputs, debug = true) {
@@ -15,12 +15,6 @@ export default class NeuralNet {
 
     //Initialize your neural network
     this.nn = ml5.neuralNetwork(options);
-
-    const modelInfo = {
-      model: mymodel,
-      metadata: mymetadata,
-      weights: myweights,
-    };
 
     // ML5 issue WHEN adding data with values of zero
     // Let's prevent that

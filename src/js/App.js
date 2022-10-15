@@ -126,8 +126,8 @@ export default class App {
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     if (e.keyCode == 76) {
-      // this.customNeuraNet.loadModel(this.handlers.modelReady);
-      this.customNeuraNet.loadModel(this.customNeuraNet.modelInfo);
+      this.customNeuraNet.loadModel(this.handlers.modelReady);
+      // this.customNeuraNet.loadModel(this.customNeuraNet.modelInfo);
     }
   }
 
