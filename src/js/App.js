@@ -1,6 +1,5 @@
 import * as THREE from "three";
-import * as ml from "ml5";
-
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import SceneBuilder from "./SceneBuilder.js";
 import LoadObject from "./LoadObject.js";
 import Slider from "./Slider.js";
@@ -59,6 +58,7 @@ export default class App {
   }
 
   onkeydown(e) {
+    console.log(e.keyCode);
     if (e.keyCode == 13) {
       this.customNeuraNet.train(this.handlers.modelReady);
     }

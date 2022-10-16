@@ -1,11 +1,9 @@
 import "./style.css";
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import App from "../src/js/App.js";
+
+import App from "./js/App.js";
 window.onload = () => {
   new App();
 };
-
 
 // // Sizes
 // const sizes = {

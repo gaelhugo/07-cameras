@@ -3,7 +3,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "dev": "cp -r static/model dist && cp -r static/assets dist && webpack serve --config ./bundler/webpack.dev.js",
     "start-https": "webpack serve --config ./bundler/webpack.dev.js  --cert certificate.cert --key certificate.key"
   },
   "dependencies": {
